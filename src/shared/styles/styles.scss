@@ -1,0 +1,145 @@
+#nprogress .bar {
+  background: #f05b91 !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #f05b91, 0 0 5px #f05b91;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #f05b91;
+  border-left-color: #f05b91;
+}
+
+html {
+  strong,
+  a {
+    font-weight: 700;
+    color: #f05b91;
+  }
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+div.css-55qab6 {
+  background-color: #690da6;
+}
+
+span.wave {
+  animation-name: wave-animation !important; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s !important; /* Change to speed up or slow down */
+  animation-iteration-count: infinite !important; /* Never stop waving :) */
+  transform-origin: 70% 70% !important; /* Pivot around the bottom-left palm */
+  display: inline-block !important;
+  margin-right: 0.2rem;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 765px) {
+  div.css-1my5ebj {
+    margin: 0 auto !important;
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.containerBlog {
+  h6 {
+    margin-top: 1rem;
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+}
+
+.podcastFlex {
+  h4,
+  h5 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+button.css-10dixwz {
+  background: transparent;
+}
+
+button.css-10dixwz:active {
+  background: transparent;
+}
+
+button.css-10dixwz:focus {
+  background: transparent;
+}
+
+.close-button {
+  button {
+    outline: transparent;
+  }
+  outline: transparent;
+}
+
+.close-button:focus {
+  button {
+    outline: transparent;
+  }
+  outline: transparent;
+}
+.close-button:active {
+  button {
+    outline: transparent;
+  }
+  outline: transparent;
+}
+
+.foto-da-luana {
+  min-width: 100%;
+  max-width: 600px;
+}
+
+.css-h6cii2 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 420px) {
+  .css-h6cii2 {
+    -webkit-padding-start: -30.5rem;
+  }
+}
+
+.forcedx {
+  svg {
+    margin-left: 2rem !important;
+  }
+}
