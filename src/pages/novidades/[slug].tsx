@@ -116,16 +116,16 @@ export default function Post({ post, navigation }: PostProps) {
 
       <Head>
         <title> {`${post.data.title} - Luana Tavares`} </title>
-        <meta
-          name="description"
-          content={`${post.data.subtitle} - Luana Tavares blog`}
-        />
+
         <meta
           property="og:site_name"
           content="Luana Tavares é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
           key="ogsitename"
         />
         <meta property="og:image" content={`${post.data.banner}`} />
+        <meta name="description" content={`${post.data.subtitle}`} />
+
+        <meta property="og:type" content="website"></meta>
       </Head>
       <Header />
       <Flex
