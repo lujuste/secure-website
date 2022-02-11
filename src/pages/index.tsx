@@ -135,13 +135,13 @@ const Home = ({
         <meta charSet="utf-8" />
         <meta
           property="og:title"
-          content="Rede de Mulheres Brasileiras Líderes pela Política"
+          content="Luana Tavares - Não podemos desistir do brasil"
           key="ogtitle"
         />
         +{' '}
         <meta
           property="og:description"
-          content="Luana Tavares é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+          content="Luana Tavar  es é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
           key="ogdesc"
         />
         <meta

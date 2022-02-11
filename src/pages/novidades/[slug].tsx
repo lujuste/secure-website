@@ -111,7 +111,21 @@ export default function Post({ post, navigation }: PostProps) {
   return (
     <>
       <Head>
+        <title>Contato - Luana Tavares </title>
+      </Head>
+
+      <Head>
         <title> {`${post.data.title} - Luana Tavares`} </title>
+        <meta
+          name="description"
+          content={`${post.data.subtitle} - Luana Tavares blog`}
+        />
+        <meta
+          property="og:site_name"
+          content="Luana Tavares é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+          key="ogsitename"
+        />
+        <meta property="og:image" content={`${post.data.banner}`} />
       </Head>
       <Header />
       <Flex

@@ -18,6 +18,7 @@ import NextLink from 'next/link';
 import { GetStaticProps } from 'next';
 import { getPrismicClient } from '../../services/prismic';
 import Prismic from '@prismicio/client';
+import Head from 'next/head';
 
 const spotifyData = [
   {
@@ -71,6 +72,35 @@ export default function Podcast({ formattedSpotify }) {
 
   return (
     <>
+      <Head>
+        <title>Podcast - Luana Tavares </title>
+        <meta
+          name="description"
+          content="Luana Tavares é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+        />
+        <meta charSet="utf-8" />
+        <meta
+          property="og:title"
+          content="Luana Tavares - Não podemos desistir do brasil"
+          key="ogtitle"
+        />
+        +{' '}
+        <meta
+          property="og:description"
+          content="Luana Tavar  es é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+          key="ogdesc"
+        />
+        <meta
+          property="og:url"
+          content={'https://www.luanatavaressp.com.br'}
+          key="ogurl"
+        />
+        <meta
+          property="og:site_name"
+          content="Luana Tavares é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+          key="ogsitename"
+        />
+      </Head>
       <Header />
       <Flex
         flexDir="column"

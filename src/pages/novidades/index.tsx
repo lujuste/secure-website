@@ -24,6 +24,7 @@ import { ptBR } from 'date-fns/locale';
 import { format } from 'date-fns';
 import NextLink from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 
 interface Post {
@@ -126,6 +127,35 @@ export default function News({ postsPagination }: HomeProps): JSX.Element {
 
   return (
     <>
+      <Head>
+        <title>Novidades - Luana Tavares </title>
+        <meta
+          name="description"
+          content="Luana Tavares é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+        />
+        <meta charSet="utf-8" />
+        <meta
+          property="og:title"
+          content="Luana Tavares - Não podemos desistir do brasil"
+          key="ogtitle"
+        />
+        +{' '}
+        <meta
+          property="og:description"
+          content="Luana Tavar  es é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+          key="ogdesc"
+        />
+        <meta
+          property="og:url"
+          content={'https://www.luanatavaressp.com.br'}
+          key="ogurl"
+        />
+        <meta
+          property="og:site_name"
+          content="Luana Tavares é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+          key="ogsitename"
+        />
+      </Head>
       <Header />
       <Flex
         py="20"

@@ -3,10 +3,40 @@ import Header from '../../shared/components/Header';
 import Footer from '../../shared/Footer';
 import NextLink from 'next/link';
 import { TimeIcon } from '@chakra-ui/icons';
+import Head from 'next/head';
 
 export default function Petitions() {
   return (
     <>
+      <Head>
+        <title>Petições - Luana Tavares </title>
+        <meta
+          name="description"
+          content="Luana Tavares é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+        />
+        <meta charSet="utf-8" />
+        <meta
+          property="og:title"
+          content="Luana Tavares - Não podemos desistir do brasil"
+          key="ogtitle"
+        />
+        +{' '}
+        <meta
+          property="og:description"
+          content="Luana Tavar  es é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+          key="ogdesc"
+        />
+        <meta
+          property="og:url"
+          content={'https://www.luanatavaressp.com.br'}
+          key="ogurl"
+        />
+        <meta
+          property="og:site_name"
+          content="Luana Tavares é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+          key="ogsitename"
+        />
+      </Head>
       <Header />
       <Flex flexDir="column" w="100%" h="80vh" maxW="1400" mx="auto" mb="2rem">
         <Flex

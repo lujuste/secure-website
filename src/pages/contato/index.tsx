@@ -15,6 +15,7 @@ import { Input } from '../../shared/components/Form/Input';
 import Image from 'next/image';
 import Header from '../../shared/components/Header';
 import { toast } from 'react-toastify';
+import Head from 'next/head';
 import Footer from '../../shared/Footer';
 import luanaFoto from '../../../public/images/luana-foto.jpg';
 import { useState } from 'react';
@@ -86,6 +87,35 @@ export default function Contact() {
   });
   return (
     <>
+      <Head>
+        <title>Contato - Luana Tavares </title>
+        <meta
+          name="description"
+          content="Luana Tavares é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+        />
+        <meta charSet="utf-8" />
+        <meta
+          property="og:title"
+          content="Luana Tavares - Não podemos desistir do brasil"
+          key="ogtitle"
+        />
+        +{' '}
+        <meta
+          property="og:description"
+          content="Luana Tavar  es é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+          key="ogdesc"
+        />
+        <meta
+          property="og:url"
+          content={'https://www.luanatavaressp.com.br'}
+          key="ogurl"
+        />
+        <meta
+          property="og:site_name"
+          content="Luana Tavares é especialista em Políticas Públicas e Ativista para modernização do Estado, Administradora, publicitária e desenvolvedora de lideranças."
+          key="ogsitename"
+        />
+      </Head>
       <Header />
 
       <Flex
